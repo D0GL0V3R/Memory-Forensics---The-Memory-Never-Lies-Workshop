@@ -1,0 +1,23 @@
+Scenario:
+
+The SOC team detected unusual activity on an employee’s Windows 10 workstation. A non-standard process was observed listening on a high TCP port late at night. The user account belongs to an employee who was recently placed under disciplinary review.
+
+The workstation has been isolated, and a memory dump was captured before shutdown.
+
+Your task: analyze the memory image and reconstruct what the user was doing at the time of acquisition.
+
+7z password: Memory2026
+
+Volatility 2 > 3 cheatsheet: https://blog.onfvp.com/post/volatility-cheatsheet/
+
+Task 1: What is the pid of the suspicious process running?
+
+Task 2: How did this process start, what is the name of the parent process?
+
+Task 3: What is this process actually running, list out the full command?
+
+Task 4: Confirm whether the suspicious process had an active network presence at the time of the dump. What time was the connection established?
+
+Task 5: A sensitive file was open on the workstation at the time of the dump. What is the filename?
+
+Task 6: From the interrogation, we know that the employee plans to carry out his plan during MIDNIGHT. Find out the IP address of where the data is planned to be exfiltrated.
